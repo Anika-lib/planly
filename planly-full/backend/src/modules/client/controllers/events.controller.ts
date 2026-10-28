@@ -7,3 +7,4 @@ export const get = reply(MSG.FETCHED, (req) => service.get(req.user.id, req.para
 export const create = replyCreated(MSG.CREATED, (req) => service.create(req.user.id, req.body))
 export const update = reply(MSG.UPDATED, (req) => service.update(req.user.id, req.params.id, req.body))
 export const submit = reply(MSG.SUBMITTED, (req) => service.submit(req.user.id, req.params.id))
+export const plan = reply(MSG.FETCHED, (req) => service.plan(req.user.id, req.params.id))
